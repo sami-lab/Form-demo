@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+    <style>
+        fieldset{
+    align-content: center;
+    background-color:mediumslateblue
+}
+h1{
+    text-align: center;
+    color: mediumslateblue;
+  
+}
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+div{
+    color: white;
+}
+    </style>
+</head>
+
+<body>
+    <form  action="page2.html" >
+        <img src="./saylani-welfare.jpg" width="500px" height="250px"
+            style="display: block; margin: auto;">
+        <h1>STUDENT REGISTRATION FORM</h1>
+        <fieldset >
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">FIRST NAME </label>
+                </div>
+                <div class="col-75">
+                    <input required type="text" name="firstname" size="20" maxlength="30"
+                        placeholder="Enter First Name">
+                    (max 30 cahrachters a-z and A-Z )
+
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname"> LAST NAME </label>
+                </div>
+                <div class="col-75">
+                    <input required type="text" name="lastname" size="20" maxlength="30" placeholder="Enter Last Name">
+                    (max 30 cahrachters a-z and A-Z )
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-25">
+                    <label for="dob">DATE OF BIRTH</label>
+                </div>
+                <div class="col-75">
+                    <input type="date" name="dateofbirth">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-25">
+                    <label for="email"> Email</label>
+                </div>
+                <div class="col-75">
+                    <input type="email" name="email" size="30" maxlength="30" placeholder="Enter email address">
+                </div>
+                <div class="col-75">
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="mbnum"> MOBILE NUMBER</label>
+                    </div>
+                    <input required type="num" name="number" maxlength="11" placeholder="Enter mobile number">
+                    (10 digit number)
+                </div>
+                <div class="col-75">
+                </div>
+
+                <br>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="gender"> Gender</label>
+                    </div>
+
+                    <input type="radio" name="Gender" value="male">  Male
+                    <input type="radio" name="Gender" value="female"> Female
+                </div>
+                <div class="col-75">
+                </div>
+
+                <br>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="comments"> ADDRESS </label>
+                    </div>
+
+                    <textarea rows="4" cols="50" id="comments">    </textarea>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="city"> CITY</label>
+                    </div>
+                    <input required type="text" name="city" size="20" maxlength="30" placeholder="Enter city name">
+                    (max 30 cahrachters a-z and A-Z )
+                </div>
+                <div class="col-75">
+                </div>
+
+                <br>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="pcode"> PIN CODE</label>
+                    </div>
+                    <input required type="num" name="CODE" size="6" maxlength="6" placeholder="Enter p_code">
+                    (6 digit number)
+                </div>
+                <div class="col-75">
+                </div>
+
+                <br>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="state">STATE</label>
+                    </div>
+                    <input required type="text" name="STATE" size="20" maxlength="30" placeholder="Enter state">
+                    (max 30 cahrachters a-z and A-Z )
+                </div>
+                <div class="col-75">
+                </div>
+
+                <br>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="country"> COUNTRY</label>
+                    </div>
+                    <input required type="text" name="COUNTRY" size="20" maxlength="30" placeholder="Enter country">
+                </div>
+                <div class="col-75">
+                </div>
+
+                <br>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="hobby">HOBBIES <br></label>
+                    </div>
+
+                   <label for="hob1"> Drawing</label><input id="hob1" type="checkbox" name="HOBBIES" value="apple">
+                    Singing:<input type="checkbox" name="HOBBIES" value="mango">
+                    Dancing:<input type="checkbox" name="HOBBIES" value="orange">
+                    Sketching:<input type="checkbox" name="HOBBIES" value="grapes"> <br>
+                    Others: <input type="checkbox"> <textarea rows="2" cols="20" id="comments"> </textarea>
+                </div>
+                <div class="col-75">
+                </div>
+
+                <br>
+
+
+                <div class="row">
+                    <div class="col-25">
+
+                        <label for="cuorces">COURCES APPLIED FOR <br></label>
+
+                    </div>
+
+                    BCA: <input type="radio" name="education" value="BCA">
+                    B.COM: <input type="radio" name="education" value="B.com">
+                    B.Sc: <input type="radio" name="education" value="B.Sc">
+                    B.A: <input type="radio" name="education" value="B.A">
+                </div>
+
+
+                <br>
+
+                <div class="row">
+                    <div class="col-25">
+
+                        <label for="cuorces">QUALIFICATION<br></label>
+
+                    </div>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>SI.No</th>
+                                <th>Examination</th>
+                                <th>Board</th>
+                                <th>Percentage</th>
+                                <th>Year Of Passing</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td> Class X</td>        
+                                <td> <input type="text" name="cuorce"></td>
+                                <td> <input type="text" name="cuorce"></td>
+                                <td> <input type="text" name="cuorce"></td>
+                            </tr>
+                            <tr>
+                                <td> 2</td>
+                                <td> Class XII</td>
+                                <td> <input type="text" name="cuorce"></td>
+                                <td> <input type="text" name="cuorce"></td>
+                                <td> <input type="text" name="cuorce"></td>
+                            </tr>
+                            <tr>
+                                <td> 3</td>
+                                <td> Graduation</td>
+                                <td> <input type="text" name="cuorce" maxlength="30"></td>
+                                <td> <input type="text" name="cuorce"></td>
+                                <td> <input type="text" name="cuorce"></td>
+                            </tr>
+                            <tr>
+                                <td> 4</td>
+                                <td> Masters</td>
+                                <td>  <input type="text" name="cuorce" maxlength="30"></td>
+                                <td> <input type="text" name="cuorce"></td>
+                                <td> <input type="text" name="cuorce"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p style="text-align: center;">
+
+                    <input type="submit" value="SUBMIT">
+                    <input type="reset" value="RESET">
+                </p>
+
+
+
+        </fieldset>
+    </form>
+</body>
+
+</html>
